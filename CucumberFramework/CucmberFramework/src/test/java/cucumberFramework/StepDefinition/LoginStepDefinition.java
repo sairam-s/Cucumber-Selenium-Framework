@@ -1,6 +1,5 @@
-package com.webdriver.CucmberFramework.StepDefinition;
+package cucumberFramework.StepDefinition;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -31,5 +30,4 @@ System.out.println("the_user_is_on_the_login_page");
 	public void the_user_is_redirected_to_the_successful_login_page() throws Throwable {
 		System.out.println("the_user_is_redirected_to_the_successful_login_page");
 	}
-
 }
