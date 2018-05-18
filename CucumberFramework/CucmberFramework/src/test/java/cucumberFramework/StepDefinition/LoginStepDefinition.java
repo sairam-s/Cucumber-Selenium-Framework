@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -50,5 +51,11 @@ public class LoginStepDefinition {
 	public void the_user_is_redirected_to_the_successful_login_page() throws Throwable {
 		WebElement askAQuestionButton = driver.findElement(By.xpath("//a[contains(text(),'Ask Question')]"));
 		Assert.assertEquals(true, askAQuestionButton.isDisplayed());
+	}
+	
+	@After
+	public void tearDown()
+	{
+		driver.close();
 	}
 }
