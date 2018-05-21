@@ -52,8 +52,8 @@
     - Check Force Update of Snapshots/Releases/.
   ```
   ### Running the tests:
-   - Use the runner class MainRunner.java to run test.
-   > You may need to adject the path for the gecko driver in LoginStepDefinition.java under StepDefinitions package.
+   - Use the runner class MainRunner.java to run test as junit test.
+   > You may need to adjust the path for the gecko driver in LoginStepDefinition.java under StepDefinitions package.
    > You have to provide your stockoverflow user-name and password in the LoginStepDefinition.java for the tests to pass.
    
        
